@@ -8,20 +8,24 @@ const { input, flags } = meow(`
       $ gql-to-module <pattern>
  
     Options
-      --typescript, -t  Generate module files with .ts extension
-      --watch, -w  Watch GraphQL files
+      --es6             Generate module files with 'export default' instead of 'module.exports'
+      --extension, -e   Output extension (default: js)
+      --watch, -w       Watch GraphQL files
  
     Examples
       $ gql-to-module ./src/**/*.graphql -t -w
 `, {
   flags: {
-    typescript: {
+    es6: {
       type: 'boolean',
-      alias: 't'
     },
     watch: {
       type: 'boolean',
       alias: 'w'
+    },
+    extension: {
+      type: 'string',
+      alias: 'e'
     }
   }
 });
