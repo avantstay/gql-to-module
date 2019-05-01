@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avantstay/graphql-to-ts.git"
+    "url": "git+https://github.com/avantstay/gql-to-module.git"
   },
   "author": "Wellington Guimaraes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/avantstay/graphql-to-ts/issues"
+    "url": "https://github.com/avantstay/gql-to-module/issues"
   },
-  "homepage": "https://github.com/avantstay/graphql-to-ts#readme",
+  "homepage": "https://github.com/avantstay/gql-to-module#readme",
   "dependencies": {
     "glob": "^7.1.3",
     "glob-watcher": "^5.0.3",
