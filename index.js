@@ -9,11 +9,12 @@ const { input, flags } = meow(`
  
     Options
       --es6             Generate module files with 'export default' instead of 'module.exports'
+      --tag             Add the graphql tag
       --extension, -e   Output extension (default: js)
       --watch, -w       Watch GraphQL files
  
     Examples
-      $ gql-to-module ./src/**/*.graphql -t -w
+      $ gql-to-module ./src/**/*.graphql --es6 --extension ts --tag --watch
 `, {
   flags: {
     es6: {
@@ -26,6 +27,9 @@ const { input, flags } = meow(`
     extension: {
       type: 'string',
       alias: 'e'
+    },
+    tag: {
+      type: 'boolean',
     }
   }
 });
