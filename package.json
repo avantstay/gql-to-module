@@ -1,6 +1,6 @@
 {
   "name": "gql-to-module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Generate .ts files from .graphql files",
   "main": "index.js",
   "bin": {
